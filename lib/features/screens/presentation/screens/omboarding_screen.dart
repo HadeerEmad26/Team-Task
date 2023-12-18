@@ -29,6 +29,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             itemBuilder: (context, index) {
               return Column(
                 children: [
+
                   //!! text
                   index!=2? Align(
                     alignment: Alignment.centerRight,
