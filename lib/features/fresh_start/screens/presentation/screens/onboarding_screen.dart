@@ -2,14 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:team_taskk/core/database/cache/cacheKeys.dart';
+import 'package:team_taskk/core/database/cache/cache_helper.dart';
+import 'package:team_taskk/core/routes/app_routes.dart';
 import 'package:team_taskk/core/utils/app_assets.dart';
 import 'package:team_taskk/core/utils/app_color.dart';
-import 'package:team_taskk/core/utils/app_routes.dart';
 import 'package:team_taskk/core/utils/app_strings.dart';
-import 'package:team_taskk/core/utils/common_functions.dart';
-import 'package:team_taskk/features/screens/data/models/onBoarding_model.dart';
-import 'package:team_taskk/features/screens/presentation/components/custom_round_elevated_button.dart';
+import 'package:team_taskk/core/helpers/common_functions.dart';
 import 'dart:math' as Math;
+
+import 'package:team_taskk/features/fresh_start/screens/data/models/onBoarding_model.dart';
+import 'package:team_taskk/features/fresh_start/screens/presentation/components/custom_round_elevated_button.dart';
+
+import '../../../../../core/services/service_locator.dart';
+
+
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
 
@@ -136,8 +143,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                             child: CustomRoundElevatedButton(
                                 onPressed: () {
                                   //!! navigate to sign in page
+                                  sl<CacheHelper>().saveData(key: CacheKeys.isNew, value: false);
                                   navigate(
-                                      context: context, route: Routes.signIn);
+                                      context: context, route: Routes.signUp);
                                 },
                                 backgroundColor: AppColors.primary,
                                 child: Text(AppStrings.start,style: Theme.of(context).textTheme.displayMedium),

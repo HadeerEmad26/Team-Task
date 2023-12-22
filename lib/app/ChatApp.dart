@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:team_taskk/core/utils/app_routes.dart';
-
+import '../core/routes/app_routes.dart';
 import '../core/utils/app_text_style.dart';
 
 class ChatApp extends StatelessWidget {
@@ -21,7 +20,7 @@ class ChatApp extends StatelessWidget {
               )
           ),
           debugShowCheckedModeBanner: false,
-          initialRoute: Routes.intitlRoutes,
+          initialRoute: Routes.initialRoute,
           onGenerateRoute: AppRoutes.generateRoute,
         );
       },
