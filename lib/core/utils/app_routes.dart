@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../features/screens/presentation/screens/forgetPassword_screen.dart';
 import '../../features/screens/presentation/screens/omboarding_screen.dart';
-import '../../features/screens/presentation/screens/signIn_screen.dart';
-import '../../features/screens/presentation/screens/signUp_screen.dart';
 import '../../features/screens/presentation/screens/splash_screen.dart';
 
 class Routes {
@@ -24,19 +22,10 @@ class AppRoutes {
         return MaterialPageRoute(
           builder: (context) => const OnBoardingScreen(),
         );
-      case Routes.signIn:
-        return MaterialPageRoute(
-          builder: (context) => const SignInScreen(),
-        );
-      case Routes.signUp:
-        return MaterialPageRoute(
-          builder: (context) => const SignUpScreen(),
-        );
       case Routes.forgetPassword:
         return MaterialPageRoute(
           builder: (context) => const ForgetPasswordScreen(),
         );
-
       default:
         return MaterialPageRoute(
           builder: (context) => const Scaffold(

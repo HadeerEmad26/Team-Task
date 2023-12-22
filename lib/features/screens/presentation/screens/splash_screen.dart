@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:team_taskk/core/utils/app_color.dart';
 import 'package:team_taskk/core/utils/app_strings.dart';
 
 import '../../../../core/utils/app_routes.dart';
-import '../../../../core/utils/coomens.dart';
+import '../../../../core/utils/common_functions.dart';
+
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -29,9 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: AppColors.primary,
       body: Center(
-        child: Text(AppStrings.chatApp,style: Theme.of(context).textTheme.displayMedium!.copyWith(
-          color: AppColors.white,
-        ),),
+        child: Text(AppStrings.chatApp,style: GoogleFonts.odorMeanChey(color: Colors.white,fontSize: 64),),
       ),
     );
   }
