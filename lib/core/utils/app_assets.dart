@@ -6,4 +6,5 @@ class AppAssets{
   static const String signIn='${basePath}signIn_signUp.png';
   static const String signUp='${basePath}signIn_signUp.png';
   static const String forgetPassword='${basePath}forgetPassword.png';
+  static const String arrowRight='${basePath}arrow_right.svg';
 }
