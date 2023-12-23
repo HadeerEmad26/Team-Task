@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:team_taskk/core/theme/app_theme.dart';
 import '../core/routes/app_routes.dart';
-import '../core/utils/app_text_style.dart';
 
 class ChatApp extends StatelessWidget {
   const ChatApp({super.key});
@@ -12,13 +12,7 @@ class ChatApp extends StatelessWidget {
       designSize: const Size(428, 926),
       builder:(_,child){
         return MaterialApp(
-          theme: ThemeData(
-              textTheme: TextTheme(
-                  displaySmall:  regularStyle(fontSize: 12,color: Colors.white),
-                  displayMedium: regularStyle(fontSize: 16,color: Colors.white),
-                  displayLarge: regularStyle(fontSize: 24,color: Colors.white)
-              )
-          ),
+          theme: getAppTheme(),
           debugShowCheckedModeBanner: false,
           initialRoute: Routes.initialRoute,
           onGenerateRoute: AppRoutes.generateRoute,

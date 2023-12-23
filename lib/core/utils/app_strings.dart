@@ -17,6 +17,7 @@ class AppStrings{
   static const String email ='E-mail';
   static const String password ='Password';
   static const String forgetPassword ='forget password ?';
+  static const String dontHaveAccount ='Don’t have an account? Sign up';
   static const String forgetPasswordSubTitle ='Enter your email address before proceeding to password reset';
 
   static const String signIn ='Sign in';
@@ -25,4 +26,6 @@ class AppStrings{
   static const String phone ='Phone Number';
   static const String department ='Department';
   static const String send ='Send';
+
+  static const obscureCharacter = "•";
 }

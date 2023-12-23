@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:team_taskk/features/auth/screens/presentation/signIn_screen.dart';
-import '../../../features/auth/screens/presentation/forgetPassword_screen.dart';
+import 'package:team_taskk/features/auth/screens/presentation/screens/signIn_screen.dart';
+import 'package:team_taskk/features/auth/screens/presentation/screens/signUp_screen.dart';
+import '../../features/auth/screens/presentation/screens/forgetPassword_screen.dart';
 import '../../../features/fresh_start/screens/presentation/screens/onboarding_screen.dart';
 import '../../../features/fresh_start/screens/presentation/screens/splash_screen.dart';
-import '../../features/auth/screens/presentation/signUp_screen.dart';
 
 class Routes {
   static const String initialRoute = '/';
@@ -31,7 +31,7 @@ class AppRoutes {
         );
       case Routes.signIn:
         return MaterialPageRoute(
-          builder: (context) => const SignInScreen(),
+          builder: (context) => SignInScreen(),
         );
         case Routes.signUp:
           return MaterialPageRoute(

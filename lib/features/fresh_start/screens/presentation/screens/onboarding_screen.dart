@@ -9,10 +9,10 @@ import 'package:team_taskk/core/utils/app_assets.dart';
 import 'package:team_taskk/core/utils/app_color.dart';
 import 'package:team_taskk/core/utils/app_strings.dart';
 import 'package:team_taskk/core/helpers/common_functions.dart';
+import 'package:team_taskk/core/widgets/custom_round_elevated_button.dart';
 import 'dart:math' as Math;
 
 import 'package:team_taskk/features/fresh_start/screens/data/models/onBoarding_model.dart';
-import 'package:team_taskk/features/fresh_start/screens/presentation/components/custom_round_elevated_button.dart';
 
 import '../../../../../core/services/service_locator.dart';
 
